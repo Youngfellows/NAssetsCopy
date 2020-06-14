@@ -1,0 +1,36 @@
+{
+  "version" : "Common 1.0",
+  "logger" : {
+    "text_buffer_entries" : 1000000,
+    "consumers" : [{
+        "name" : "SystemTestErrorLogConsumer",
+        "modules" : "",
+        "not_modules" : "",
+        "zones" : "LOG_ERROR|LOG_FATAL"
+      },{
+        "name" : "SystemTestFileLogConsumer",
+        "modules" : "",
+        "not_modules" : "",
+        "zones" : "LOG_ALL_TEXT"
+      },{
+        "name" : "text to file",
+        "output" : "./OneShotWuwSample.log",
+        "modules" : "",
+        "not_modules" : "",
+        "zones" : "LOG_ALL_TEXT"
+      },{
+        "name" : "error to file",
+        "output" : "./OneShotWuwSample_ErrorsAndWarnings.log",
+        "modules" : "",
+        "not_modules" : "",
+        "zones" : "LOG_ERROR|LOG_FATAL|LOG_WARNING"
+      },{
+        "name" : "sut to file",
+        "output" : "./OneShotWuwSample_sut.log",
+        "modules" : "",
+        "not_modules" : "",
+        "zones" : "LOG_ALL_TEXT"
+      }
+    ]
+  }
+}

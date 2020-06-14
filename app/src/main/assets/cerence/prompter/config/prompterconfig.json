@@ -1,0 +1,40 @@
+{
+  "version": "Prompter 1.0", 
+  "prompter": [
+    {
+      "name": "prompter", 
+      "type": "local", 
+      "local": {
+        "voice_data_path": {
+          "uses": "vocalizer"
+        }
+      }
+    }
+  ], 
+  "usecase": [
+    {
+      "name": "english_us", 
+      "type": "local", 
+      "local": {
+        "voice_config": {
+          "uses": "vc_ava"
+        },
+        "enabled_markers": "textunit, word"
+      }
+    }
+  ], 
+  "voice_config": [
+    {
+      "name": "vc_ava", 
+      "language": "enu", 
+      "voice": "ava", 
+      "operating_point": "embedded-high"
+    }
+  ], 
+  "voice_data_path": [
+    {
+      "name": "vocalizer", 
+      "vocalizer_path": "../vocalizer"
+    }
+  ]
+}

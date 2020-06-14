@@ -1,0 +1,49 @@
+{
+  "version": "VoConHigh 5.0",
+  "application": [{
+      "name": "MUSIC_SIMPLE",
+      "input": [{
+          "type": "asr",
+          "asr": {
+            "dccs_to_wait_for" : [{
+              "name" : "DCC_LOCAL_TITLE"
+            }],    
+            "search": [{
+                "name": "HOST_TITLE",
+                "type": "static",
+                "static": {
+                  "file_name": "shuffle.fcf"
+                },
+                "connection": [{
+                    "expansion_point": "slot:Semple_MusicSimpleSlm#contentType",
+                    "search": {
+                      "type": "dynamic",
+                      "dynamic": {
+                        "dynamic_content_consumer": "DCC_LOCAL_TITLE",
+                        "search_name": "title.fcf"
+                      }
+                    }
+                  }
+                ], 
+				"vocon_parameters": {
+                  "LH_SEARCH_PARAM_TSILENCE": 500
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "nlu": [{
+          "name": "SEM3_MUSIC_SIMPLE",
+          "type": "sem3",
+          "sem3": {
+            "app": {
+              "name": "MUSIC_APP",
+              "file_name": "music_simple_v5.s3c"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version" : "VoConHigh 5.0",
+  "dynamic_content_consumer" : [{
+      "name": "DCC_LOCAL_TITLE",
+      "content": [{
+          "type": "string",
+          "name": "Title_Ortho"
+        }
+      ],
+      "type": "list",
+      "list": {
+        "persist_searchs": "true",
+        "lexicon": {
+          "uses": "ENU_ML_PRON_CHAIN"
+        },
+        "search": [{
+            "name": "title.fcf",
+            "acmod": "acmod6_6000_enu_gen_car_f16_v1_0_1.dat",
+            "link": [
+              [{
+                  "type": "content",
+                  "content": {
+                    "clc_category": "normal",
+                    "name": "Title_Ortho"
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

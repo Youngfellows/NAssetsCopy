@@ -1,0 +1,21 @@
+{
+  "version": "Common 1.0",
+  "logger": {
+    "text_buffer_entries": 1000000,
+    "data_buffer_size_per_channel":500000,
+    "consumers": [{
+        "name": "stdout Logger",
+        "output": "stdout",
+        "modules": "",
+        "not_modules": "",
+        "zones": "LOG_FATAL|LOG_ERROR|LOG_WARNING|LOG_CORE_INFO|LOG_EXTERNAL_FUNC"
+      },
+      {
+        "name": "loudspeaker_audio_output_data",
+        "output": "loudspeaker_audio_output_data_%DATE_TIME%.pcm",
+        "modules": "nuance.audio.AudioOutput.loudspeaker",
+        "zones": "LOG_DATA"
+      }
+    ]
+  }
+}

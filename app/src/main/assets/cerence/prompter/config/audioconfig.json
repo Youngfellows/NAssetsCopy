@@ -1,0 +1,25 @@
+{
+  "version": "AudioMgr 1.0",
+
+  "audio_scenario": [{
+    "name":       "simplePromptingScenario",
+    "audiopaths": [ ["prompter", "loudspeaker"] ]
+  }],
+
+  "module_config": [{
+    "type":                "AudioOutput",
+    "name":                "loudspeaker",
+    "adapter_type":        "CUSTOM_AUDIO",
+    "adapter_params": {
+        "device_name": "default"
+    },
+    "audio_format":      { "uses": "22khz_1ch" }
+  }],
+
+  "audio_format": [{
+    "name": "22khz_1ch",
+    "sample_rate": 22050,
+    "samples_per_channel": 512,
+    "channel_count": 1
+  }]
+}

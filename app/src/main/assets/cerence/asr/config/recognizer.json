@@ -1,0 +1,31 @@
+{
+  "version": "VoConHigh 5.0",
+  "recognizer": [{
+      "name": "testRecognizer",
+      "asr_engine": {
+        "language": [{
+            "acmod": {
+              "file_name": {
+                "vh_callback": {
+                  "name": "ACMOD_FILENAME",
+                  "type": "string",
+                  "default": "acmod6_6000_enu_gen_car_f16_v1_0_1.dat"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }, {
+      "name": "rec",
+      "asr_engine": {
+        "language": [{
+            "acmod": {
+              "file_name": "acmod6_6000_enu_gen_car_f16_v1_0_1.dat"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

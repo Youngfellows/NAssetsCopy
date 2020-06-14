@@ -1,0 +1,87 @@
+{
+    "version": "VoConHigh 5.0",
+    "application":
+    [{
+        "name": "DOMAIN_REMOTE_HTTP",
+        "input":
+        [{
+            "type": "cloud",
+            "cloud":
+            {
+                "cloud_services_name": "csHttp",
+                "query" :
+                {
+                    "name": "REMOTE_QUERY_HTTP",
+                    "command": "NCS_ASR_CMD",
+                    "connection_info":
+                    {
+                        "uses": "DRAGON_CONNECTION_INFO_HTTP"
+                    },
+                    "param":
+                    {
+                        "type": "REQUEST_INFO",
+                        "REQUEST_INFO":
+                        {
+                            "json":
+                            {
+                                "dialog":
+                                {
+                                    "type": "dialog-1.0",
+                                    "_session":
+                                    {
+                                        "vh_callback":
+                                        {
+                                            "name": "vh_callback_session",
+                                            "type": "string",
+                                            "default": ""
+                                        }
+                                    }
+                                },
+                                "session_state":
+                                {
+                                    "vh_callback":
+                                    {
+                                        "name": "vh_callback_sessionState",
+                                        "type": "string",
+                                        "default": ""
+                                    }
+                                },
+                                "location_points":
+                                {
+                                    "focal_point":
+                                    {
+                                        "coordinates":
+                                        {
+                                            "vh_callback":
+                                            {
+                                                "name": "vh_callback_ncs_focal_destination_coordinates",
+                                                "type": "string",
+                                                "default": ""
+                                            }
+                                        },
+                                        "display_focus": "true"
+                                    }
+                                },
+                                "binary_results": 0,
+                                "enable_auto_punctuation": 1,
+                                "end": 0,
+                                "nlsml_results": 1,
+                                "start": 0,
+                                "text": "",
+                                "intermediate_response_mode":
+                                {
+                                    "vh_callback":
+                                    {
+                                        "name": "vh_callback_word_streaming",
+                                        "type": "string",
+                                        "default": "NoUtteranceDetectionWithPartialRecognition"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }]
+    }]
+    }

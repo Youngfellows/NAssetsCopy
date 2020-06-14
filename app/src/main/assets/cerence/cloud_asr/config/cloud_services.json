@@ -1,0 +1,29 @@
+{
+  "version" : "CloudServices 5.0",
+  "cloud_services" : [{
+    "name" : "csHttp",
+    "type": "http",
+    "url": "https://REPLACE_ME.net:443/NmspServlet/",
+    "ssl_certificate_bundle": "REPLACEME.crt",
+    "app_id": "REPLACE_ME",
+    "app_key": "1234567890123456",
+    "app_name" : "csdk_eval_1.0",
+    "app_version" : "1.0",
+    "app_language" : "eng-USA",
+    "carrier" : "n/a",
+    "device_model" : "n/a",
+    "uid" : "csdk_tests_uid",
+    "input_audio_format" : {
+      "encoding": "ENCODING_PCM_16BIT",
+      "sample_rate" : 16000,
+      "samples_per_channel" : 1024,
+      "channel_count" : 1
+    },
+    "output_audio_format" : {
+      "encoding": "ENCODING_PCM_16BIT",
+      "sample_rate" : 16000,
+      "samples_per_channel" : 1920,
+      "channel_count" : 1
+    }
+  }]
+}

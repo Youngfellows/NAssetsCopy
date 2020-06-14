@@ -1,0 +1,18 @@
+{
+   "version":"VoConHigh 5.0",
+   "filter":[
+      {
+         "name":"ACTIVATE_ALL",
+         "json": {
+         }
+      },
+      {
+         "name":"DEACTIVATE_MUSIC_SIMPLE",
+         "json": {
+           "topics": "_MusicSimple:Music\\.ShuffleOn",
+           "version": "1.0",
+           "filterType": "TopicDeactivation"
+         }
+      }
+   ]
+}

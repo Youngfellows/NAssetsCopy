@@ -1,0 +1,12 @@
+{
+  "version" : "VoConHigh 5.0",
+  "lexicon" : {
+    "name" : "ENU_ML_PRON_CHAIN",
+    "clc" : {
+      "filename" : "clc_enu_mpthreevadml_v6_0_1.dat",
+	  "vocon_parameters" : {
+        "LH_CLC_PARAM_NUMBER_OUTPUT_TRANSCRIPTIONS" : 5
+      }
+    }
+  }
+}

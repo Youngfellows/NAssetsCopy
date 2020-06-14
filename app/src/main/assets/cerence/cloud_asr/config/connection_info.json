@@ -1,0 +1,33 @@
+{
+    "version": "VoConHigh 5.0",
+  "connection_info" : [{
+    "name" : "DRAGON_CONNECTION_INFO_HTTP",
+    "json" : {
+        "audio_source":"SpeakerAndMicrophone",
+		"enable_weather_content": "1",
+        "dictation_type": "Automotive-Dictation",
+        "uid": "123456",
+        "ui_language": "en",
+        "dictation_language": "eng-USA",
+        "carrier": "Nuance-mtl",
+        "pdx_version": "1.0.0.0",
+        "phone_OS": "Android4.0",
+        "script_version": "1.0.0.0",
+        "phone_model": "NUANCE_PC-MTL",
+        "client_version": "0.1",
+        "application_version": "0.1",
+        "locale": "usa",
+        "command_timeout" : 5000,
+        "location": {
+            "vh_callback": {
+                "name": "vh_callback_coordinates",
+                "type": "string",
+                "default": "<+36.113663, -115.175948> +/- 0m"
+            }
+        },
+        "application": "SAMPLE",
+        "application_language": "en"
+
+      }
+  }]
+}
