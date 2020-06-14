@@ -1,0 +1,10 @@
+#BNF+EMV2.1;
+
+!grammar Semple_MusicSimpleSlm;
+!start <START>;
+!slot <contentType>;
+!slot <artistName>;
+!slot <songName>;
+   
+<START>: [shuffle] (<contentType> | <artistName> | <songName>);
+

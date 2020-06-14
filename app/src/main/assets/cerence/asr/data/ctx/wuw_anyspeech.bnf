@@ -1,0 +1,4 @@
+#BNF+EMV2.1;
+!grammar wuw_anyspeech;
+!start <_main_>;
+<_main_>: !tag(WUW, "Hello Auto") [<...>];

@@ -1,0 +1,16 @@
+﻿#ECO V1.2 UTF-8;
+
+#ECOScheme COP1 V1.6
+#EDBDatabaseID NBT_FirstLastNames_v_1_0
+#EDBTableUpdateMode GivenInColumn
+#EDBTableUpdateType FullUpdate
+#EDBTableUpdateID 1
+
+# Columns:
+#Column1 Title_Ortho
+
+#Format(Title_Ortho) Quoted
+
+"Nevermind";
+"Yesterday";
+"Beat It";
